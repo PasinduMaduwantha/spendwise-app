@@ -1,0 +1,39 @@
+name: spendwise
+description: Smart money tracker with unit-price brand comparison, cheapest shop finder, and rating+price value scoring.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.4.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # State management
+  flutter_riverpod: ^2.6.1
+
+  # Firebase suite
+  firebase_core: ^3.8.0
+  firebase_auth: ^5.3.3
+  cloud_firestore: ^5.5.0
+  firebase_storage: ^12.3.6
+
+  # Charts & UI
+  fl_chart: ^0.69.2
+  intl: ^0.19.0
+  uuid: ^4.5.1
+
+  # Receipt attachments & CSV export
+  image_picker: ^1.1.2
+  path_provider: ^2.1.5
+  share_plus: ^10.1.2
+  csv: ^6.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true

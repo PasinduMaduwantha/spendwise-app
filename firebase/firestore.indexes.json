@@ -1,0 +1,46 @@
+{
+  "indexes": [
+    {
+      "collectionGroup": "transactions",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "type", "order": "ASCENDING" },
+        { "fieldPath": "date", "order": "DESCENDING" }
+      ]
+    },
+    {
+      "collectionGroup": "transactions",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "categoryId", "order": "ASCENDING" },
+        { "fieldPath": "date", "order": "DESCENDING" }
+      ]
+    },
+    {
+      "collectionGroup": "transactions",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "product.productGroup", "order": "ASCENDING" },
+        { "fieldPath": "date", "order": "DESCENDING" }
+      ]
+    },
+    {
+      "collectionGroup": "community_observations",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "productGroup", "order": "ASCENDING" },
+        { "fieldPath": "normalizedUnitPrice", "order": "ASCENDING" }
+      ]
+    },
+    {
+      "collectionGroup": "community_observations",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "categoryName", "order": "ASCENDING" },
+        { "fieldPath": "shopName", "order": "ASCENDING" },
+        { "fieldPath": "recordedAt", "order": "DESCENDING" }
+      ]
+    }
+  ],
+  "fieldOverrides": []
+}
